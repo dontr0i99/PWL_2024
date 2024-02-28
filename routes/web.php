@@ -50,5 +50,12 @@ Route::get('/articles/{id}', [ArticlesController::class, 'articles']);
 
 Route::resource('photos', PhotoController::class);
 
+// Route::get('/greeting', function () {  	return view('blog.hello', ['name' => 'Tryo']); 
+// });
+Route::get('/greeting', [WelcomeController::class, 
+'greeting']);
+
+
+
 
 
